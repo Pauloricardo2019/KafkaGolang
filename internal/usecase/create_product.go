@@ -3,14 +3,14 @@ package usecase
 import "GoKafkaMessenger/internal/entity"
 
 type CreateProductInputDto struct {
-	Name  string
-	Price float64
+	Name  string  `json:"name"`
+	Price float64 `json:"price"`
 }
 
 type CreateProductOutDto struct {
-	ID    string
-	Name  string
-	Price float64
+	ID    string  `json:"id"`
+	Name  string  `json:"name"`
+	Price float64 `json:"price"`
 }
 
 type CreateProductUseCase struct {
